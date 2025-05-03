@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - ShopEase</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="logo">
+                    <a href="index.html">ShopEase</a>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="products.html" class="nav-link">Products</a></li>
+                        <li class="nav-item"><a href="categories.html" class="nav-link">Categories</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <a href="search.html" class="action-link">
+                        <img src="icons/search.svg" alt="Search" class="icon">
+                    </a>
+                    <a href="account.html" class="action-link">
+                        <img src="icons/user.svg" alt="Account" class="icon">
+                    </a>
+                    <a href="cart.html" class="action-link cart active">
+                        <img src="icons/cart.svg" alt="Cart" class="icon">
+                        <span class="cart-count">3</span>
+                    </a>
+                    <button class="mobile-menu-toggle">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 class="page-title">Shopping Cart</h1>
+            
+            <div class="cart-container">
+                <div class="cart-items">
+                    <div class="cart-header">
+                        <div class="cart-header-product">Product</div>
+                        <div class="cart-header-price">Price</div>
+                        <div class="cart-header-quantity">Quantity</div>
+                        <div class="cart-header-total">Total</div>
+                        <div class="cart-header-actions"></div>
+                    </div>
+                    
+                    <!-- Cart Item 1 -->
+                    <div class="cart-item">
+                        <div class="cart-item-product">
+                            <img src="images/product1.jpg" alt="Casual Summer T-Shirt" class="cart-item-image">
+                            <div class="cart-item-details">
+                                <h3 class="cart-item-title">Casual Summer T-Shirt</h3>
+                                <div class="cart-item-meta">
+                                    <span class="cart-item-color">Color: Blue</span>
+                                    <span class="cart-item-size">Size: M</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-item-price">$29.99</div>
+                        <div class="cart-item-quantity">
+                            <div class="quantity-selector">
+                                <button class="quantity-btn minus">-</button>
+                                <input type="number" value="1" min="1" max="10" class="quantity-input">
+                                <button class="quantity-btn plus">+</button>
+                            </div>
+                        </div>
+                        <div class="cart-item-total">$29.99</div>
+                        <div class="cart-item-actions">
+                            <button class="cart-item-remove">
+                                <img src="icons/trash.svg" alt="Remove" class="icon">
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Cart Item 2 -->
+                    <div class="cart-item">
+                        <div class="cart-item-product">
+                            <img src="images/product2.jpg" alt="Elegant Wristwatch" class="cart-item-image">
+                            <div class="cart-item-details">
+                                <h3 class="cart-item-title">Elegant Wristwatch</h3>
+                                <div class="cart-item-meta">
+                                    <span class="cart-item-color">Color: Silver</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-item-price">
+                            <span class="original-price">$199.99</span>
+                            <span class="discounted-price">$149.99</span>
+                        </div>
+                        <div class="cart-item-quantity">
+                            <div class="quantity-selector">
+                                <button class="quantity-btn minus">-</button>
+                                <input type="number" value="1" min="1" max="10" class="quantity-input">
+                                <button class="quantity-btn plus">+</button>
+                            </div>
+                        </div>
+                        <div class="cart-item-total">$149.99</div>
+                        <div class="cart-item-actions">
+                            <button class="cart-item-remove">
+                                <img src="icons/trash.svg" alt="Remove" class="icon">
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Cart Item 3 -->
+                    <div class="cart-item">
+                        <div class="cart-item-product">
+                            <img src="images/product3.jpg" alt="Wireless Headphones" class="cart-item-image">
+                            <div class="cart-item-details">
+                                <h3 class="cart-item-title">Wireless Headphones</h3>
+                                <div class="cart-item-meta">
+                                    <span class="cart-item-color">Color: Black</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-item-price">$89.99</div>
+                        <div class="cart-item-quantity">
+                            <div class="quantity-selector">
+                                <button class="quantity-btn minus">-</button>
+                                <input type="number" value="1" min="1" max="10" class="quantity-input">
+                                <button class="quantity-btn plus">+</button>
+                            </div>
+                        </div>
+                        <div class="cart-item-total">$89.99</div>
+                        <div class="cart-item-actions">
+                            <button class="cart-item-remove">
+                                <img src="icons/trash.svg" alt="Remove" class="icon">
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="cart-actions">
+                        <div class="coupon">
+                            <input type="text" placeholder="Coupon code" class="coupon-input">
+                            <button class="btn btn-outline">Apply Coupon</button>
+                        </div>
+                        <button class="btn btn-outline">Update Cart</button>
+                    </div>
+                </div>
+                
+                <div class="cart-summary">
+                    <h2 class="summary-title">Order Summary</h2>
+                    <div class="summary-row">
+                        <span class="summary-label">Subtotal</span>
+                        <span class="summary-value">$269.97</span>
+                    </div>
+                    <div class="summary-row">
+                        <span class="summary-label">Discount</span>
+                        <span class="summary-value discount">-$50.00</span>
+                    </div>
+                    <div class="summary-row">
+                        <span class="summary-label">Shipping</span>
+                        <span class="summary-value">Free</span>
+                    </div>
+                    <div class="summary-row total">
+                        <span class="summary-label">Total</span>
+                        <span class="summary-value">$219.97</span>
+                    </div>
+                    <a href="checkout.html" class="btn btn-primary btn-block">Proceed to Checkout</a>
+                    <div class="continue-shopping">
+                        <a href="products.html">Continue Shopping</a>
+                    </div>
+                    <div class="payment-methods-summary">
+                        <p>We Accept:</p>
+                        <div class="payment-icons">
+                            <img src="icons/visa.svg" alt="Visa">
+                            <img src="icons/mastercard.svg" alt="Mastercard">
+                            <img src="icons/paypal.svg" alt="PayPal">
+                            <img src="icons/apple-pay.svg" alt="Apple Pay">
+                            <img src="icons/google-pay.svg" alt="Google Pay">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <section class="recently-viewed">
+                <h2 class="section-title">Recently Viewed</h2>
+                <div class="product-grid">
+                    <!-- Recently Viewed Product 1 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/recent1.jpg" alt="Recently Viewed Product 1">
+                            <div class="product-actions">
+                                <button class="product-action">
+                                    <img src="icons/heart.svg" alt="Add to Wishlist">
+                                </button>
+                                <button class="product-action">
+                                    <img src="icons/cart-plus.svg" alt="Add to Cart">
+                                </button>
+                                <button class="product-action">
+                                    <img src="icons/eye.svg" alt="Quick View">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Denim Jacket</h3>
+                            <div class="product-category">Men's Clothing</div>
+                            <div class="product-price">$79.99</div>
+                            <div class="product-rating">
+                                <span class="stars">★★★★☆</span>
+                                <span class="count">(37)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recently Viewed Product 2 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/recent2.jpg" alt="Recently Viewed Product 2">
+                            <div class="product-actions">
+                                <button class="product-action">
+                                    <img src="icons/heart.svg" alt="Add to Wishlist">
+                                </button>
+                                <button class="product-action">
+                                    <img src="icons/cart-plus.svg" alt="Add to Cart">
+                                </button>
+                                <button class="product-action">
+                                    <img src="icons/eye.svg" alt="Quick View">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Wireless Earbuds</h3>
+                            <div class="product-category">Electronics</div>
+                            <div class="product-price">$59.99</div>
+                            <div class="product-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="count">(64)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recently Viewed Product 3 -->
+                    <div class="product-card">
+                        <div class="product-badge sale">Sale</div>
+                        <div class="product-image">
+                            <img src="images/recent3.jpg" alt="Recently Viewed Product 3">
+                            <div class="product-actions">
+                                <button class="product-action">
+                                    <img src="icons/heart.svg" alt="Add to Wishlist">
+                                </button>
+                                <button class="product-action">
+                                    <img src="icons/cart-plus.svg" alt="Add to Cart">
+                                </button>
+                                <button class="product-action">
+                                    <img src="icons/eye.svg" alt="Quick View">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Running Shoes</h3>
+                            <div class="product-category">Footwear</div>
+                            <div class="product-price">
+                                <span class="original-price">$129.99</span>
+                                <span class="discounted-price">$99.99</span>
+                            </div>
+                            <div class="product-rating">
+                                <span class="stars">★★★★☆</span>
+                                <span class="count">(52)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recently Viewed Product 4 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/recent4.jpg" alt="Recently Viewed Product 4">
+                            <div class="product-actions">
+                                <button class="product-action">
+                                    <img src="icons/heart.svg" alt="Add to Wishlist">
+                                </button>
+                                <button class="product-action">
+                                    <img src="icons/cart-plus.svg" alt="Add to Cart">
+                                </button>
+                                <button class="product-action">
+                                    <img src="icons/eye.svg" alt="Quick View">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Leather Wallet</h3>
+                            <div class="product-category">Accessories</div>
+                            <div class="product-price">$49.99</div>
+                            <div class="product-rating">
+                                <span class="stars">★★★★☆</span>
+                                <span class="count">(43)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <div class="footer-logo">ShopEase</div>
+                    <p class="footer-description">Your one-stop shop for all your needs. Quality products at affordable prices.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <img src="icons/facebook.svg" alt="Facebook">
+                        </a>
+                        <a href="#" class="social-link">
+                            <img src="icons/instagram.svg" alt="Instagram">
+                        </a>
+                        <a href="#" class="social-link">
+                            <img src="icons/twitter.svg" alt="Twitter">
+                        </a>
+                        <a href="#" class="social-link">
+                            <img src="icons/youtube.svg" alt="YouTube">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-heading">Shop</h3>
+                    <ul class="footer-links">
+                        <li><a href="products.html">All Products</a></li>
+                        <li><a href="category-clothing.html">Clothing</a></li>
+                        <li><a href="category-electronics.html">Electronics</a></li>
+                        <li><a href="category-accessories.html">Accessories</a></li>
+                        <li><a href="category-home.html">Home & Living</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-heading">Customer Service</h3>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                        <li><a href="shipping.html">Shipping & Delivery</a></li>
+                        <li><a href="returns.html">Returns & Exchanges</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-heading">My Account</h3>
+                    <ul class="footer-links">
+                        <li><a href="account.html">My Account</a></li>
+                        <li><a href="orders.html">Order History</a></li>
+                        <li><a href="wishlist.html">Wishlist</a></li>
+                        <li><a href="newsletter.html">Newsletter</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-heading">Contact Us</h3>
+                    <address class="contact-info">
+                        <p>123 Commerce Street</p>
+                        <p>New York, NY 10001</p>
+                        <p>United States</p>
+                        <p>Email: info@shopease.com</p>
+                        <p>Phone: +1 (555) 123-4567</p>
+                    </address>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    &copy; 2025 ShopEase. All rights reserved.
+                </div>
+                <div class="payment-methods">
+                    <img src="icons/visa.svg" alt="Visa">
+                    <img src="icons/mastercard.svg" alt="Mastercard">
+                    <img src="icons/paypal.svg" alt="PayPal">
+                    <img src="icons/apple-pay.svg" alt="Apple Pay">
+                    <img src="icons/google-pay.svg" alt="Google Pay">
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
