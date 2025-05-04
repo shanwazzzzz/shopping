@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Store</title>
+    <style>
+        /* General Styles */
+        body {
+            /* font-family: 'Poppins', sans-serif; */
+            margin: 0;
+            padding: 0;
+            background-color: #ad74afd8;
+            color: #474747;
+            scroll-behavior: smooth;
+        }
+        *{
+            font-family: 'roboto', sans-serif;
+        }
+
+        /* Header */
+        header {
+            background-color: #7c7474d5;
+            color: white;
+            position: sticky    ;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: rgb(255, 253, 253);
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #382f33;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            width: 200px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(130, 247, 255, 0.514),rgba(169, 130, 219, 0.555), rgba(248, 132, 248, 0.5), rgba(240, 11, 171, 0.308)), url('hero-banner.jpg') no-repeat center center/cover;
+            text-align: center;
+            padding: 80px 20px;
+            color: white;
+        }
+
+        .hero h2 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+
+        .hero button {
+            padding: 12px 25px;
+            background-color: #9e6b6bd0;
+            color: white;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .hero button:hover {
+            background-color: #3a2020;
+        }
+
+        /* Categories */
+        .categories {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+        }
+
+        .category {
+            background-color: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 4px 5px 10px rgba(62, 51, 88, 0.87);
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .category:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+        }
+
+        /* Featured Products */
+        .featured {
+            padding: 40px;
+            background-color: #FFFFFF;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .product {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .product h3 {
+            margin: 15px 0;
+        }
+
+        .product p {
+            font-size: 18px;
+            color: #FF6F61;
+            font-weight: bold;
+        }
+
+        .product button {
+            background-color: #FF6F61;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .product button:hover {
+            background-color: #E64A45;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Clothing Store</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Wome</a></li>
+                <li><a href="">Accessories</a></li>
+                <li><a href="category-home.html">Home Living</a></li>
+            </ul>
+        </nav>
+        <input type="text" placeholder="Search products...">
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Discover the Latest Fashion Trends!</h2>
+        <button>Shop Now</button>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories">
+        <h2>Browse by Category</h2>
+        <div class="category-grid">
+            <div class="category">Men's Clothing</div>
+            <div class="category">Women's Clothing</div>
+            <div class="category">Kids' Clothing</div>
+            <div class="category">Accessories</div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="shirt.webp" alt="Stylish Shirt">
+                <h3>Stylish Shirt</h3>
+                <p>$7.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="dress.jpeg" alt="Elegant Dress">
+                <h3>Elegant Dress</h3>
+                <p>$9.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

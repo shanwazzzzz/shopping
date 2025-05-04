@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Living</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: #2E4053;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #F39C12;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('home-living-banner.jpg') no-repeat center center/cover;
+            text-align: center;
+            padding: 80px 20px;
+            color: white;
+        }
+
+        .hero h2 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+
+        .hero button {
+            padding: 12px 25px;
+            background-color: #F39C12;
+            color: white;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .hero button:hover {
+            background-color: #D68910;
+        }
+
+        /* Categories */
+        .categories {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+        }
+
+        .category {
+            background-color: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .category:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+        }
+
+        /* Featured Items */
+        .featured {
+            padding: 40px;
+            background-color: #FFFFFF;
+        }
+
+        .item-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .item {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .item:hover {
+            transform: scale(1.05);
+        }
+
+        .item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .item h3 {
+            margin: 15px 0;
+        }
+
+        .item p {
+            font-size: 18px;
+            color: #F39C12;
+            font-weight: bold;
+        }
+
+        .item button {
+            background-color: #F39C12;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .item button:hover {
+            background-color: #D68910;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2E4053;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Home Living</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="#">Decor</a></li>
+                <li><a href="#">Lighting</a></li>
+                <li><a href="#">Outdoor</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Enhance Your Living Space with Elegant Designs</h2>
+        <button>Shop Now</button>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories">
+        <h2>Shop by Category</h2>
+        <div class="category-grid">
+            <div class="category">Luxury Sofas</div>
+            <div class="category">Modern Lighting</div>
+            <div class="category">Elegant Decor</div>
+            <div class="category">Outdoor Comfort</div>
+        </div>
+    </section>
+
+    <!-- Featured Items -->
+    <section class="featured">
+        <h2>Featured Products</h2>
+        <div class="item-grid">
+            <div class="item">
+                <img src="sofa.jpg" alt="Luxury Sofa">
+                <h3>Luxury Sofa</h3>
+                <p>$799.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="item">
+                <img src="lamp.jpg" alt="Stylish Lamp">
+                <h3>Stylish Lamp</h3>
+                <p>$129.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="item">
+                <img src="vase.jpg" alt="Elegant Vase">
+                <h3>Elegant Vase</h3>
+                <p>$59.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+</body>
+</html>
